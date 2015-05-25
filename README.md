@@ -23,6 +23,8 @@ Installation: (just quick/testing for now, not a permanent deployment)
 4. Edit the WEB-INF/web.xml file in your rt4ds webapp directory and insert the following lines:
 
 
+```
+
     <!-- put in filters section -->
     <filter>
         <filter-name>authorisation-filter</filter-name>
@@ -42,12 +44,13 @@ Installation: (just quick/testing for now, not a permanent deployment)
     </filter>
 
 
-
     <!-- put in filter mappings section -->
     <filter-mapping>
         <filter-name>authorisation-filter</filter-name>
         <url-pattern>/file/*</url-pattern>
     </filter-mapping>
+```
+
 
 
 5. Restart Tomcat (or whatever webapp container you use), test.
